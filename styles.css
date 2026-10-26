@@ -20,6 +20,9 @@ nav a{margin-inline-start:18px;text-decoration:none;font-size:16px;opacity:.9}
 .hero p{max-width:34ch;font-size:19px;margin:18px 0 28px;opacity:.92}
 .btn{display:inline-block;background:var(--sun);color:#062B2E;font-weight:700;padding:12px 26px;border-radius:6px;text-decoration:none;border:0;font:inherit;font-weight:700;cursor:pointer}
 .btn.alt{background:transparent;color:inherit;border:2px solid currentColor;margin-inline-start:10px}
+.hero-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;width:min(100%,520px)}
+.hero-actions .btn{display:flex;align-items:center;justify-content:center;min-width:0;overflow-wrap:anywhere;text-align:center}
+.hero-actions .btn.alt{margin-inline-start:0}
 .dunes{position:relative;height:210px;margin-top:20px}
 .pyr{position:absolute;bottom:0;background:#0A1E34;clip-path:polygon(50% 0,100% 100%,0 100%)}
 .p1{width:360px;height:210px;left:6%}.p2{width:240px;height:140px;left:30%;background:#0D2540}.p3{width:140px;height:84px;left:44%;background:#112C4B}
