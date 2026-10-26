@@ -221,14 +221,20 @@ nodes.forEach(function(n){var o=orig.get(n),k=o.trim().replace(/\s+/g,' '),r=o,t
 if(t)r=o.replace(o.trim(),t);n.nodeValue=r});
 var d=document.documentElement;d.lang=L;d.dir=L==='ar'?'rtl':'ltr';
 document.title=L==='ar'?T0:TT[L];
+updateMenuLabel();
 }
-var lb=document.getElementById('lb'),lm=document.getElementById('lm');
+var lb=document.getElementById('lb'),lm=document.getElementById('lm'),
+menuButton=document.getElementById('menu-toggle'),siteNav=document.getElementById('site-nav');
 function setUI(L){document.getElementById('lc').textContent=L.toUpperCase();lm.querySelectorAll('button').forEach(function(b){b.setAttribute('aria-current',b.dataset.l===L?'true':'false')})}
 function closeM(){lm.hidden=true;lb.setAttribute('aria-expanded','false')}
+function closeNav(){menuButton.closest('header.top').classList.remove('menu-open');menuButton.setAttribute('aria-expanded','false');updateMenuLabel()}
+function updateMenuLabel(){var open=menuButton.getAttribute('aria-expanded')==='true',lang=document.documentElement.lang;menuButton.setAttribute('aria-label',lang==='ar'?(open?'إغلاق القائمة':'فتح القائمة'):(open?'Close menu':'Open menu'))}
+menuButton.addEventListener('click',function(e){e.stopPropagation();var open=menuButton.getAttribute('aria-expanded')!=='true';menuButton.closest('header.top').classList.toggle('menu-open',open);menuButton.setAttribute('aria-expanded',String(open));updateMenuLabel()});
+siteNav.addEventListener('click',function(e){if(e.target.closest('a'))closeNav()});
 lb.addEventListener('click',function(e){e.stopPropagation();var o=lm.hidden;lm.hidden=!o;lb.setAttribute('aria-expanded',String(o))});
 lm.addEventListener('click',function(e){var b=e.target.closest('button');if(b){setLang(b.dataset.l);closeM()}});
-document.addEventListener('click',closeM);
-document.addEventListener('keydown',function(e){if(e.key==='Escape')closeM()});
+document.addEventListener('click',function(e){closeM();if(!e.target.closest('header.top'))closeNav()});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeM();closeNav()}});
 var nl=(navigator.language||'ar').slice(0,2).toLowerCase();
 setLang(['ar','en','fr','de','es','ru','it','zh'].indexOf(nl)>-1?nl:'en');
 var hd=document.querySelector('header.top');
