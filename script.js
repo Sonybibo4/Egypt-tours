@@ -32,10 +32,53 @@ D=[
 ['أبو سمبل','Abu Simbel','معبدا أبو سمبل المنحوتان في الصخر: معبد رمسيس الثاني ومعبد الملكة نفرتاري.','The two rock-cut temples of Abu Simbel: Ramses II and Queen Nefertari.','9 ساعات','9 hours','g',{f:[240,170,140,130],l:[220,150,110,100],c:C}],
 ['تجهيز مناسبات على سطح بإطلالة الأهرامات','Rooftop Events with a Pyramids View','ديكور أعياد الميلاد والخطوبة والمناسبات، عشاء رومانسي، تصوير احترافي وباقات مخصصة.','Decor for birthdays, proposals and events, candlelit dinners, professional photography and custom packages.','مناسبات خاصة','Special events','q',{}]
 ],
+PHOTO_CREDITS={
+'giza-pyramids.jpg':['Ricardo Liberato','CC BY-SA 2.0','https://commons.wikimedia.org/wiki/File:All_Gizah_Pyramids.jpg'],
+'giza-sphinx.jpg':['Petar Milošević','CC BY-SA 4.0','https://commons.wikimedia.org/wiki/File:Great_Sphinx_of_Giza_(أبو_الهول).jpg'],
+'grand-egyptian-museum.jpg':['Djehouty','CC BY-SA 4.0','https://commons.wikimedia.org/wiki/File:Grand_Egyptian_Museum_2019-11-07c.jpg'],
+'djoser-step-pyramid.jpg':['Wknight94 talk','CC BY-SA 3.0','https://commons.wikimedia.org/wiki/File:Pyramid_of_Djoser_2010.jpg'],
+'saqqara.jpg':['Berthold Werner','CC BY 3.0','https://commons.wikimedia.org/wiki/File:Saqqara_BW_5.jpg'],
+'bent-pyramid.jpg':['Darer101','CC BY-SA 4.0','https://commons.wikimedia.org/wiki/File:11-degree_angle_change_of_the_Bent_Pyramid_at_Dahshur.jpg'],
+'bent-pyramid-panorama.jpg':['lienyuan lee','CC BY 3.0','https://commons.wikimedia.org/wiki/File:Bent_Pyramid_曲折金字塔_-_panoramio.jpg'],
+'camel-pyramids.jpg':['Time00','CC BY-SA 4.0','https://commons.wikimedia.org/wiki/File:Camel_ride_in_Pyramids_of_Egypt.jpg'],
+'camel-sphinx.jpg':['Tom Beazley, published by aussiejeff','CC BY 2.0','https://commons.wikimedia.org/wiki/File:036_1941_-_Camel_rides_while_at_the_Sphinx_%5E_Great_Pyramid,_Giza,_Egypt_(by_Dvr_Tom_Beazley)_02.jpg'],
+'nile-cairo.jpg':['Jim Joel','CC BY-SA 4.0','https://commons.wikimedia.org/wiki/File:A_boat_on_the_river_Nile_in_Cairo_Egypt.jpg'],
+'nile-boats.jpg':['Hatab10','CC BY-SA 4.0','https://commons.wikimedia.org/wiki/File:River_Nile_Cairo.jpg'],
+'alexandria-qaitbay.jpg':['لا روسا','CC BY-SA 3.0','https://commons.wikimedia.org/wiki/File:Citadel_of_Qaitbay_014.JPG'],
+'alexandria-citadel.jpg':['Summering2018','CC BY-SA 4.0','https://commons.wikimedia.org/wiki/File:القلعة_اسكندرية.jpg'],
+'white-desert-rocks.jpg':['Vyacheslav Argenberg','CC BY 4.0','https://commons.wikimedia.org/wiki/File:White_Desert,_Rock_formations_in_desert_landscape,_Egypt.jpg'],
+'white-desert-landscape.jpg':['Vyacheslav Argenberg','CC BY 4.0','https://commons.wikimedia.org/wiki/File:White_Desert,_Stark_desert_landscape,_Rock_formations,_Egypt.jpg'],
+'desert-safari.jpg':['Norhan Elmaghrabi','CC BY-SA 4.0','https://commons.wikimedia.org/wiki/File:Dessert_Safari.jpg'],
+'cairo-citadel.jpg':['Ahmed Al.Badawy','CC BY-SA 2.0','https://commons.wikimedia.org/wiki/File:Flickr_-_HuTect_ShOts_-_Citadel_of_Salah_El.Din_and_Masjid_Muhammad_Ali_17_04_2010_(4).jpg'],
+'hanging-church.jpg':['Daniel Mayer','CC BY-SA 4.0','https://commons.wikimedia.org/wiki/File:Cairo_-_Coptic_area_-_Hanging_Church_from_courtyard.JPG'],
+'karnak-temple.jpg':['Diego Delso','CC BY-SA 4.0','https://commons.wikimedia.org/wiki/File:Templo_de_Karnak,_Luxor,_Egipto,_2022-04-03,_DD_144.jpg'],
+'karnak-khonsu.jpg':['Marc Ryckaert (MJJR)','CC BY 3.0','https://commons.wikimedia.org/wiki/File:Karnak_Khonsu_Temple_R01.jpg'],
+'valley-of-kings.jpg':['Vyacheslav Argenberg','CC BY 4.0','https://commons.wikimedia.org/wiki/File:Thebes,_Luxor,_Egypt,_Valley_of_the_Kings_from_above.jpg'],
+'luxor-balloon.jpg':['Marcosleal','CC BY-SA 3.0','https://commons.wikimedia.org/wiki/File:Balloon_over_Luxor_-_Egypt.jpg'],
+'abu-simbel.jpg':['Diego Delso','CC BY-SA 4.0','https://commons.wikimedia.org/wiki/File:Templo_de_Rams%C3%A9s_II,_Abu_Simbel,_Egipto,_2022-04-02,_DD_26-28_HDR.jpg'],
+'abu-simbel-temple.jpg':['Diego Delso','CC BY-SA 4.0','https://commons.wikimedia.org/wiki/File:Templo_de_Rams%C3%A9s_II,_Abu_Simbel,_Egipto,_2022-04-02,_DD_74-76_HDR.jpg']
+},
+TOUR_PHOTOS=[
+[['giza-pyramids.jpg','منظر للأهرامات الثلاثة في الجيزة','View of the three Giza pyramids'],['giza-sphinx.jpg','أبو الهول وأهرامات الجيزة','The Sphinx and Giza pyramids'],['djoser-step-pyramid.jpg','هرم زوسر المدرج في سقارة','Djoser Step Pyramid at Saqqara'],['saqqara.jpg','موقع سقارة الأثري','The Saqqara archaeological site']],
+[['giza-pyramids.jpg','منظر للأهرامات الثلاثة في الجيزة','View of the three Giza pyramids'],['giza-sphinx.jpg','أبو الهول وأهرامات الجيزة','The Sphinx and Giza pyramids'],['grand-egyptian-museum.jpg','مبنى المتحف المصري الكبير','Grand Egyptian Museum building']],
+[['grand-egyptian-museum.jpg','مبنى المتحف المصري الكبير','Grand Egyptian Museum building'],['cairo-citadel.jpg','قلعة صلاح الدين ومسجد محمد علي','Saladin Citadel and Mohamed Ali Mosque'],['hanging-church.jpg','الكنيسة المعلقة في القاهرة القديمة','The Hanging Church in Old Cairo']],
+[['camel-pyramids.jpg','ركوب الجمال بجوار الأهرامات','Camel ride beside the pyramids'],['camel-sphinx.jpg','جمال وأبو الهول عند هضبة الجيزة','Camels and the Sphinx on the Giza Plateau']],
+[['nile-cairo.jpg','قارب على نهر النيل في القاهرة','A boat on the Nile in Cairo'],['nile-boats.jpg','قوارب على نهر النيل في القاهرة','Boats on the Nile in Cairo']],
+[['alexandria-qaitbay.jpg','قلعة قايتباي في الإسكندرية','Qaitbay Citadel in Alexandria'],['alexandria-citadel.jpg','مشهد آخر لقلعة قايتباي','Another view of Qaitbay Citadel']],
+[['white-desert-rocks.jpg','تكوينات صخرية في الصحراء البيضاء','Rock formations in the White Desert'],['white-desert-landscape.jpg','مناظر الصحراء البيضاء في مصر','White Desert landscape in Egypt']],
+[['desert-safari.jpg','جولة دراجات رباعية في الصحراء','Quad bike safari in the desert'],['giza-pyramids.jpg','الأهرامات عند حافة صحراء الجيزة','Pyramids at the edge of the Giza desert']],
+[['cairo-citadel.jpg','قلعة صلاح الدين ومسجد محمد علي','Saladin Citadel and Mohamed Ali Mosque'],['hanging-church.jpg','الكنيسة المعلقة في القاهرة القديمة','The Hanging Church in Old Cairo']],
+[['karnak-temple.jpg','معبد الكرنك في الأقصر','Karnak Temple in Luxor'],['karnak-khonsu.jpg','معبد خونسو في مجمع الكرنك','Khonsu Temple at Karnak']],
+[['valley-of-kings.jpg','وادي الملوك في الأقصر','The Valley of the Kings in Luxor'],['luxor-balloon.jpg','بالون هوائي فوق الأقصر عند الشروق','Hot air balloon over Luxor at sunrise']],
+[['luxor-balloon.jpg','بالون هوائي فوق الأقصر عند الشروق','Hot air balloon over Luxor at sunrise'],['valley-of-kings.jpg','وادي الملوك في الأقصر','The Valley of the Kings in Luxor']],
+[['karnak-temple.jpg','معبد الكرنك في الأقصر','Karnak Temple in Luxor'],['valley-of-kings.jpg','وادي الملوك في الأقصر','The Valley of the Kings in Luxor'],['luxor-balloon.jpg','بالون هوائي فوق الأقصر','Hot air balloon over Luxor']],
+[['abu-simbel.jpg','معبد رمسيس الثاني في أبو سمبل','Temple of Ramses II at Abu Simbel'],['abu-simbel-temple.jpg','منحوتات معبد أبو سمبل','Carvings at Abu Simbel Temple']],
+[['giza-pyramids.jpg','إطلالة على الأهرامات من الجيزة','A view of the pyramids from Giza'],['giza-sphinx.jpg','أبو الهول وهضبة الجيزة','The Sphinx and Giza Plateau']]
+],
 BD=T('خصم 20%','20% off'),FR=T('من','From'),VP=T('عرض الأسعار','View prices'),PR=T('للفرد','Per person'),
 g=document.getElementById('tg'),out='';
 document.querySelector('#tours .lead').textContent=T('الأسعار بالدولار الأمريكي للفرد، بعد خصم 20%. الغداء والتذاكر حسب الباقة المختارة، والإكرامية غير مشمولة.','Prices are per person in US dollars, after a 20% discount. Lunch and tickets depend on the package you choose; tips are not included.');
-D.forEach(function(d){
+D.forEach(function(d,di){
 var t=T(d[0],d[1]),ds=T(d[2],d[3]),k=d[6],pr=d[7],
 mt=k==='q'?T('مناسبات خاصة','Special events'):T(d[4]+' – جولة خاصة',d[5]+' – Private tour'),
 s='<article class="tour">'+(k==='q'?'':'<span class="bd">'+BD+'</span>')+'<h3>'+E(t)+'</h3><div class="meta">'+E(mt)+'</div><p>'+E(ds)+'</p>';
@@ -49,8 +92,46 @@ keys.forEach(function(x){s+='<th>'+E(x==='x'?(d[8]?T(d[8],d[9]):PR):PK[x])+'</th
 s+='</tr>';
 rows.forEach(function(r,i){s+='<tr><th>'+r+'</th>';keys.forEach(function(x){var p=pr[x][i];s+='<td><s>$'+p+'</s><b>$'+d20(p)+'</b></td>'});s+='</tr>'});
 s+='</table></div></details>'}
+s+='<button class="gallery-open" type="button" data-gallery-index="'+di+'">'+T('صور الرحلة','View trip photos')+'</button>';
 out+=s+'</article>'});
 g.innerHTML=out;
+var galleryDialog=document.getElementById('gallery-dialog'),
+galleryTitle=document.getElementById('gallery-title'),
+galleryImage=document.getElementById('gallery-image'),
+galleryCaption=document.getElementById('gallery-caption'),
+galleryCount=document.getElementById('gallery-count'),
+galleryPrev=document.getElementById('gallery-prev'),
+galleryNext=document.getElementById('gallery-next'),
+activeGallery=[],activeGalleryIndex=0,activeTourTitle='';
+function renderGalleryPhoto(){
+var photo=activeGallery[activeGalleryIndex],credit=PHOTO_CREDITS[photo[0]],lang=document.documentElement.lang;
+galleryTitle.textContent=activeTourTitle;
+galleryImage.src='images/tours/'+photo[0];
+galleryImage.alt=lang==='ar'?photo[1]:photo[2];
+galleryCaption.replaceChildren();
+var caption=document.createElement('span'),source=document.createElement('a');
+caption.textContent=galleryImage.alt+' — '+credit[0]+' · '+credit[1]+' ';
+source.href=credit[2];source.target='_blank';source.rel='noopener noreferrer';source.textContent='Wikimedia Commons';
+galleryCaption.append(caption,source);
+galleryCount.textContent=(activeGalleryIndex+1)+' / '+activeGallery.length;
+galleryPrev.disabled=activeGalleryIndex===0;
+galleryNext.disabled=activeGalleryIndex===activeGallery.length-1;
+galleryPrev.setAttribute('aria-label',lang==='ar'?'الصورة السابقة':'Previous photo');
+galleryNext.setAttribute('aria-label',lang==='ar'?'الصورة التالية':'Next photo');
+}
+g.addEventListener('click',function(e){
+var button=e.target.closest('.gallery-open');
+if(!button)return;
+activeGalleryIndex=0;
+activeGallery=TOUR_PHOTOS[Number(button.dataset.galleryIndex)];
+activeTourTitle=button.closest('.tour').querySelector('h3').textContent.trim();
+renderGalleryPhoto();
+galleryDialog.showModal();
+});
+galleryPrev.addEventListener('click',function(){if(activeGalleryIndex>0){activeGalleryIndex--;renderGalleryPhoto()}});
+galleryNext.addEventListener('click',function(){if(activeGalleryIndex<activeGallery.length-1){activeGalleryIndex++;renderGalleryPhoto()}});
+document.getElementById('gallery-close').addEventListener('click',function(){galleryDialog.close()});
+galleryDialog.addEventListener('click',function(e){if(e.target===galleryDialog)galleryDialog.close()});
 document.getElementById('t').innerHTML=D.map(function(d){return '<option>'+E(d[0])+'</option>'}).join('');
 })();
 (function(){
@@ -68,7 +149,7 @@ document.getElementById('sg').innerHTML=o;
 })();
 var nodes=[],orig=new Map(),en=false,T0=document.title,w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
 while(w.nextNode()){var nd=w.currentNode;if(nd.parentNode.tagName!=='SCRIPT'&&nd.nodeValue.trim()){nodes.push(nd);orig.set(nd,nd.nodeValue)}}
-var TR={"Safety at every step":["La sécurité à chaque étape","Sicherheit bei jedem Schritt","Seguridad en cada paso"],"Modern air-conditioned cars, professional drivers and a guide with you throughout, so you can relax.":["Voitures modernes et climatisées, chauffeurs professionnels et un guide à vos côtés tout au long du trajet, pour voyager l’esprit tranquille.","Moderne klimatisierte Fahrzeuge, professionelle Fahrer und ein Guide, der Sie die ganze Zeit begleitet – damit Sie sich entspannen können.","Coches modernos con aire acondicionado, conductores profesionales y un guía a tu lado todo el viaje, para que te relajes."],"Punctual, every time":["Ponctuels, à chaque fois","Immer pünktlich","Puntuales, siempre"],"We arrive before your pickup time and stick to the agreed schedule from start to finish.":["Nous arrivons avant l’heure de prise en charge et respectons le programme convenu du début à la fin.","Wir sind vor der Abholzeit da und halten den vereinbarten Zeitplan von Anfang bis Ende ein.","Llegamos antes de la hora de recogida y respetamos el programa acordado de principio a fin."],
+var TR={"View trip photos":["Voir les photos de l’excursion","Tourfotos ansehen","Ver fotos del viaje"],"Safety at every step":["La sécurité à chaque étape","Sicherheit bei jedem Schritt","Seguridad en cada paso"],"Modern air-conditioned cars, professional drivers and a guide with you throughout, so you can relax.":["Voitures modernes et climatisées, chauffeurs professionnels et un guide à vos côtés tout au long du trajet, pour voyager l’esprit tranquille.","Moderne klimatisierte Fahrzeuge, professionelle Fahrer und ein Guide, der Sie die ganze Zeit begleitet – damit Sie sich entspannen können.","Coches modernos con aire acondicionado, conductores profesionales y un guía a tu lado todo el viaje, para que te relajes."],"Punctual, every time":["Ponctuels, à chaque fois","Immer pünktlich","Puntuales, siempre"],"We arrive before your pickup time and stick to the agreed schedule from start to finish.":["Nous arrivons avant l’heure de prise en charge et respectons le programme convenu du début à la fin.","Wir sind vor der Abholzeit da und halten den vereinbarten Zeitplan von Anfang bis Ende ein.","Llegamos antes de la hora de recogida y respetamos el programa acordado de principio a fin."],
 "Tours":["Circuits","Touren","Excursiones"],
 "Why us":["Pourquoi nous","Warum wir","Por qué nosotros"],
 "Book":["Réserver","Buchen","Reservar"],
@@ -122,7 +203,7 @@ var TR={"Safety at every step":["La sécurité à chaque étape","Sicherheit bei
 "Follow us":["Suivez-nous","Folgen Sie uns","Síguenos"],
 "Pyramids Road, Giza, Egypt":["Route des Pyramides, Gizeh, Égypte","Pyramids Road, Gizeh, Ägypten","Calle de las Pirámides, Guiza, Egipto"],
 "See all reviews on Tripadvisor":["Voir tous les avis sur Tripadvisor","Alle Bewertungen auf Tripadvisor ansehen","Ver todas las opiniones en Tripadvisor"]};
-var TR2={"Safety at every step":["Безопасность на каждом этапе","Sicurezza in ogni momento"],"Modern air-conditioned cars, professional drivers and a guide with you throughout, so you can relax.":["Современные автомобили с кондиционером, профессиональные водители и гид рядом на протяжении всей поездки — вам остаётся только расслабиться.","Auto moderne e climatizzate, autisti professionisti e una guida con te per tutto il viaggio, così puoi rilassarti."],"Punctual, every time":["Всегда вовремя","Puntuali, sempre"],"We arrive before your pickup time and stick to the agreed schedule from start to finish.":["Мы приезжаем до назначенного времени и придерживаемся согласованного графика от начала до конца.","Arriviamo prima dell’orario di ritiro e rispettiamo il programma concordato dall’inizio alla fine."],
+var TR2={"View trip photos":["Смотреть фото экскурсии","Guarda le foto del tour"],"Safety at every step":["Безопасность на каждом этапе","Sicurezza in ogni momento"],"Modern air-conditioned cars, professional drivers and a guide with you throughout, so you can relax.":["Современные автомобили с кондиционером, профессиональные водители и гид рядом на протяжении всей поездки — вам остаётся только расслабиться.","Auto moderne e climatizzate, autisti professionisti e una guida con te per tutto il viaggio, così puoi rilassarti."],"Punctual, every time":["Всегда вовремя","Puntuali, sempre"],"We arrive before your pickup time and stick to the agreed schedule from start to finish.":["Мы приезжаем до назначенного времени и придерживаемся согласованного графика от начала до конца.","Arriviamo prima dell’orario di ritiro e rispettiamo il programma concordato dall’inizio alla fine."],
 "Tours":["Туры","Tour"],"Why us":["Почему мы","Perché noi"],"Book":["Забронировать","Prenota"],
 "The Pyramids, through the eyes of Giza":["Пирамиды глазами жителей Гизы","Le Piramidi, con gli occhi di Giza"],
 "Guided trips with licensed Egyptian guides, from the Great Pyramid to the Grand Egyptian Museum.":["Организованные поездки с лицензированными египетскими гидами: от Великой пирамиды до Большого Египетского музея.","Escursioni guidate con guide egiziane autorizzate, dalla Grande Piramide al Grande Museo Egizio."],
@@ -168,7 +249,7 @@ var TR2={"Safety at every step":["Безопасность на каждом э�
 "Address":["Адрес","Indirizzo"],"Follow us":["Мы в соцсетях","Seguici"],
 "Pyramids Road, Giza, Egypt":["Pyramids Road, Гиза, Египет","Pyramids Road, Giza, Egitto"],
 "See all reviews on Tripadvisor":["Все отзывы на Tripadvisor","Vedi tutte le recensioni su Tripadvisor"]};
-var TR3={"Safety at every step":["全程安全保障"],"Modern air-conditioned cars, professional drivers and a guide with you throughout, so you can relax.":["现代化空调车辆、专业司机，全程有导游陪同，让您安心出行。"],"Punctual, every time":["准时守约"],"We arrive before your pickup time and stick to the agreed schedule from start to finish.":["我们会在接送时间之前到达，并从头到尾严格按约定行程执行。"],
+var TR3={"View trip photos":["查看行程照片"],"Safety at every step":["全程安全保障"],"Modern air-conditioned cars, professional drivers and a guide with you throughout, so you can relax.":["现代化空调车辆、专业司机，全程有导游陪同，让您安心出行。"],"Punctual, every time":["准时守约"],"We arrive before your pickup time and stick to the agreed schedule from start to finish.":["我们会在接送时间之前到达，并从头到尾严格按约定行程执行。"],
 "Tours":["行程"],"Why us":["为什么选择我们"],"Book":["预订"],
 "The Pyramids, through the eyes of Giza":["带你用吉萨本地人的视角看金字塔"],
 "Guided trips with licensed Egyptian guides, from the Great Pyramid to the Grand Egyptian Museum.":["持证埃及导游带队的精品行程，从胡夫金字塔到大埃及博物馆。"],
@@ -248,4 +329,4 @@ function show(k){i=k;rs.forEach(function(r,j){r.classList.toggle('on',j===k)});d
 function auto(){clearInterval(tm);if(!matchMedia('(prefers-reduced-motion:reduce)').matches)tm=setInterval(function(){show((i+1)%rs.length)},6500)}
 show(0);auto()})();
 function go(c){var t=c.querySelector('h3').textContent.trim(),e=document.documentElement.lang!=='ar';window.open('https://wa.me/201043608451?text='+encodeURIComponent((e?'Hello, I would like to book: ':'مرحبًا، أريد حجز: ')+t),'_blank','noopener')}
-document.querySelectorAll('.tour').forEach(function(c){c.tabIndex=0;c.setAttribute('role','link');c.addEventListener('click',function(e){if(!e.target.closest('details'))go(c)});c.addEventListener('keydown',function(e){if(e.target===c&&(e.key==='Enter'||e.key===' ')){e.preventDefault();go(c)}})});
+document.querySelectorAll('.tour').forEach(function(c){c.tabIndex=0;c.setAttribute('role','link');c.addEventListener('click',function(e){if(!e.target.closest('details,button,a'))go(c)});c.addEventListener('keydown',function(e){if(e.target===c&&(e.key==='Enter'||e.key===' ')){e.preventDefault();go(c)}})});

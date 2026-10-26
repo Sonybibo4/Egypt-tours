@@ -72,6 +72,22 @@
 </form>
 </div></section>
 
+<dialog class="gallery-dialog" id="gallery-dialog" aria-labelledby="gallery-title">
+<div class="gallery-head">
+<h2 id="gallery-title"></h2>
+<button class="gallery-close" id="gallery-close" type="button" aria-label="إغلاق الصور">×</button>
+</div>
+<figure class="gallery-figure">
+<img id="gallery-image" alt="">
+<figcaption id="gallery-caption"></figcaption>
+</figure>
+<div class="gallery-controls">
+<button id="gallery-prev" type="button" aria-label="الصورة السابقة">‹</button>
+<span id="gallery-count"></span>
+<button id="gallery-next" type="button" aria-label="الصورة التالية">›</button>
+</div>
+</dialog>
+
 <footer><div class="wrap">
 <div class="ft">
 <a class="logo" href="#top" dir="ltr"><svg width="30" height="26" viewBox="0 0 30 26" aria-hidden="true"><circle cx="15" cy="4" r="3" fill="#E8833A"/><path d="M15 8 28 25H2z" fill="currentColor"/></svg>Benben Tours</a>
