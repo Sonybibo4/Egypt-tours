@@ -1,8 +1,10 @@
 
+var BOOKING_INTRO={ar:'مرحبًا، أريد حجز:',en:'Hello, I would like to book:',fr:'Bonjour, je souhaite réserver :',de:'Hallo, ich möchte buchen:',es:'Hola, me gustaría reservar:',ru:'Здравствуйте, хочу забронировать:',it:'Salve, vorrei prenotare:',zh:'您好，我想预订：'};
 document.getElementById('f').addEventListener('submit',function(e){
 e.preventDefault();
 var v=function(i){return document.getElementById(i).value};
-var isEn=document.documentElement.lang!=='ar';var msg=isEn?'Hello, I would like to book: '+v('t')+'\nName: '+v('n')+'\nDate: '+v('d')+'\nPeople: '+v('c'):'مرحبًا، أريد حجز: '+v('t')+'\nالاسم: '+v('n')+'\nالتاريخ: '+v('d')+'\nعدد الأفراد: '+v('c');
+var lang=document.documentElement.lang,localized=function(key,arabic){return lang==='ar'?arabic:(tr(key,lang)||key)};
+var msg=(BOOKING_INTRO[lang]||BOOKING_INTRO.en)+' '+v('t')+'\n'+localized('Name','الاسم')+': '+v('n')+'\n'+localized('Date','التاريخ')+': '+v('d')+'\n'+localized('Number of people','عدد الأفراد')+': '+v('c');
 window.open('https://wa.me/201043608451?text='+encodeURIComponent(msg),'_blank','noopener');
 });
 var EN={'أمان في كل خطوة':'Safety at every step','سيارات حديثة مكيفة وسائقون محترفون ومرشد معك طوال الرحلة، لتستمتع براحة بال كاملة.':'Modern air-conditioned cars, professional drivers and a guide with you throughout, so you can relax.','دقة في المواعيد':'Punctual, every time','نصل قبل موعدك، ونلتزم بالبرنامج المتفق عليه من أول لحظة حتى العودة.':'We arrive before your pickup time and stick to the agreed schedule from start to finish.','واتساب':'WhatsApp','العنوان':'Address','تابعنا':'Follow us','شارع الهرم، الجيزة، مصر':'Pyramids Road, Giza, Egypt','شوف كل التقييمات على Tripadvisor':'See all reviews on Tripadvisor','آراء المسافرين':'What travelers say','من تقييمات ضيوفنا بعد الرحلة.':'From guest reviews after their trip.','الشروق عند الهرم كان أجمل ما في رحلتنا لمصر. المرشد عرف كل ركن وأخذنا قبل الزحام.':'Sunrise at the Pyramid was the best part of our trip to Egypt. The guide knew every corner and got us there before the crowds.','سارة، مانشستر':'Sarah, Manchester','سعر واضح من الأول ولا مفاجآت. والسيارة نضيفة ومكيفة والسائق ملتزم بالمواعيد.':'Clear price from the start, no surprises. The car was clean and air-conditioned and the driver was on time.','أحمد، الرياض':'Ahmed, Riyadh','رحنا سقارة ودهشور مع الأولاد، والشرح كان بسيط وممتع للصغار قبل الكبار.':'We visited Saqqara and Dahshur with the kids. The explanation was simple and fun for the little ones as well as the adults.','ماري ولوران، ليون':'Marie & Laurent, Lyon','الرحلات':'Tours','لماذا نحن':'Why us','احجز':'Book','الأهرامات بعيون أهل الجيزة':'The Pyramids, through the eyes of Giza','رحلات منظمة مع مرشدين مصريين مرخّصين، من الهرم الأكبر إلى المتحف المصري الكبير.':'Guided trips with licensed Egyptian guides, from the Great Pyramid to the Grand Egyptian Museum.','احجز رحلتك':'Book your trip','شوف الرحلات':'See the tours','رحلاتنا':'Our tours','كل الأسعار للفرد وتشمل المواصلات الخاصة والمرشد. تذاكر الدخول تُحسب حسب الأسعار الرسمية.':'Prices are per person and include private transport and a guide. Entry tickets are charged at official rates.','شروق الشمس عند الهرم الأكبر':'Sunrise at the Great Pyramid','٤ ساعات – قبل الزحام – مجموعات صغيرة':'4 hours – before the crowds – small groups','نبدأ قبل فتح الأبواب بقليل لنقف أمام الأهرامات الثلاثة والهدوء ما زال يملأ المكان، ثم نكمل بمنظر بانوراما وأبو الهول.':'We arrive just before the gates open and stand before the three pyramids while it is still quiet, then continue to the panorama point and the Sphinx.','من ٩٥٠ جنيه':'From EGP 950','جولة الأهرامات وأبو الهول':'Pyramids & Sphinx tour','٣ ساعات – كل يوم':'3 hours – daily','زيارة الهرم الأكبر ومعبد الوادي وأبو الهول مع شرح تاريخي مبسط.':'Visit the Great Pyramid, the Valley Temple and the Sphinx with a clear historical overview.','من ٧٥٠ جنيه':'From EGP 750','المتحف المصري الكبير':'Grand Egyptian Museum','٤ ساعات':'4 hours','رحلة داخل المتحف المجاور للأهرامات، بما فيها قاعة توت عنخ آمون.':'A visit inside the museum beside the Pyramids, including the Tutankhamun galleries.','من ١٬٢٠٠ جنيه':'From EGP 1,200','سقارة ومنف ودهشور':'Saqqara, Memphis & Dahshur','يوم كامل':'Full day','هرم زوسر المدرّج والهرم المنحني، وغداء محلي في الطريق.':'Djoser’s Step Pyramid and the Bent Pyramid, with a local lunch on the way.','من ١٬٨٠٠ جنيه':'From EGP 1,800','جمل وخيل على هضبة الجيزة':'Camel & horse ride on the Giza Plateau','ساعة – عند الغروب':'1 hour – at sunset','ركوب مع مرافق من الشركة وأسعار ثابتة متفق عليها مسبقًا.':'Rides with a company escort and fixed prices agreed in advance.','من ٤٥٠ جنيه':'From EGP 450','لماذا Benben Tours':'Why Benben Tours','نشتغل في الهضبة كل يوم، ونعرف كيف تكون الزيارة مريحة.':'We work on the plateau every day and know how to make the visit comfortable.','مرشدون مرخّصون':'Licensed guides','يتحدثون العربية والإنجليزية والفرنسية والألمانية.':'Speaking Arabic, English, French and German.','سعر واضح':'Clear pricing','ما تدفعه وقت الحجز هو ما تدفعه بالضبط.':'What you pay at booking is exactly what you pay.','مواصلات خاصة':'Private transport','سيارة مكيفة من الفندق وإليه، في القاهرة والجيزة.':'Air-conditioned car to and from your hotel in Cairo and Giza.','مجموعات صغيرة':'Small groups','حتى ١٠ أفراد لتسمع الشرح وتأخذ وقتك في الصور.':'Up to 10 people, so you hear the guide and have time for photos.','اكتب بياناتك وسنكمل معك التأكيد على واتساب خلال دقائق.':'Fill in your details and we’ll confirm on WhatsApp within minutes.','الاسم':'Name','الرحلة':'Tour','التاريخ':'Date','عدد الأفراد':'Number of people','أرسل الطلب على واتساب':'Send request on WhatsApp','© Benben Tours – شارع الهرم، الجيزة، مصر':'© Benben Tours – Pyramids Road, Giza, Egypt'};
@@ -102,12 +104,13 @@ galleryCaption=document.getElementById('gallery-caption'),
 galleryCount=document.getElementById('gallery-count'),
 galleryPrev=document.getElementById('gallery-prev'),
 galleryNext=document.getElementById('gallery-next'),
-activeGallery=[],activeGalleryIndex=0,activeTourTitle='';
+activeGallery=[],activeGalleryIndex=0,activeTourTitle='',activeTourCard=null;
 function renderGalleryPhoto(){
 var photo=activeGallery[activeGalleryIndex],credit=PHOTO_CREDITS[photo[0]],lang=document.documentElement.lang;
+activeTourTitle=activeTourCard.querySelector('h3').textContent.trim();
 galleryTitle.textContent=activeTourTitle;
 galleryImage.src='images/tours/'+photo[0];
-galleryImage.alt=lang==='ar'?photo[1]:photo[2];
+galleryImage.alt=lang==='ar'?photo[1]:(tr(photo[2],lang)||photo[2]);
 galleryCaption.replaceChildren();
 var caption=document.createElement('span'),source=document.createElement('a');
 caption.textContent=galleryImage.alt+' — '+credit[0]+' · '+credit[1]+' ';
@@ -116,15 +119,16 @@ galleryCaption.append(caption,source);
 galleryCount.textContent=(activeGalleryIndex+1)+' / '+activeGallery.length;
 galleryPrev.disabled=activeGalleryIndex===0;
 galleryNext.disabled=activeGalleryIndex===activeGallery.length-1;
-galleryPrev.setAttribute('aria-label',lang==='ar'?'الصورة السابقة':'Previous photo');
-galleryNext.setAttribute('aria-label',lang==='ar'?'الصورة التالية':'Next photo');
+galleryPrev.setAttribute('aria-label',UI_LABELS[lang].previousPhoto);
+galleryNext.setAttribute('aria-label',UI_LABELS[lang].nextPhoto);
 }
+window.refreshGalleryLanguage=function(){if(galleryDialog.open)renderGalleryPhoto()};
 g.addEventListener('click',function(e){
 var button=e.target.closest('.gallery-open');
 if(!button)return;
 activeGalleryIndex=0;
 activeGallery=TOUR_PHOTOS[Number(button.dataset.galleryIndex)];
-activeTourTitle=button.closest('.tour').querySelector('h3').textContent.trim();
+activeTourCard=button.closest('.tour');
 renderGalleryPhoto();
 galleryDialog.showModal();
 });
@@ -296,20 +300,32 @@ var TR3={"View trip photos":["查看行程照片"],"Safety at every step":["全�
 "Pyramids Road, Giza, Egypt":["金字塔路，吉萨，埃及"],
 "See all reviews on Tripadvisor":["在 Tripadvisor 查看全部评价"]};
 var LX={fr:0,de:1,es:2,ru:0,it:1,zh:0},TT={zh:"Benben Tours – 吉萨与金字塔旅游",ru:"Benben Tours – туры по Гизе и пирамидам",it:"Benben Tours – Turismo a Giza e alle Piramidi",en:"Benben Tours – Giza & Pyramids Tourism",fr:"Benben Tours – Tourisme à Gizeh et aux Pyramides",de:"Benben Tours – Reisen nach Gizeh und zu den Pyramiden",es:"Benben Tours – Turismo en Guiza y las Pirámides"};
-function tr(k,L){var e=EN[k];if(!e)return null;if(L==='en')return e;var a=(L==='zh'?TR3:L==='ru'||L==='it'?TR2:TR)[e];return a?a[LX[L]]:e}
+function tr(k,L){var e=EN[k],extra=window.EXTRA_TRANSLATIONS&&window.EXTRA_TRANSLATIONS[L];if(L==='en')return e||k;if(extra&&Object.prototype.hasOwnProperty.call(extra,k))return extra[k];if(!e)return null;if(extra&&Object.prototype.hasOwnProperty.call(extra,e))return extra[e];var a=(L==='zh'?TR3:L==='ru'||L==='it'?TR2:TR)[e];return a?a[LX[L]]:e}
 function setLang(L){setUI(L);
 nodes.forEach(function(n){var o=orig.get(n),k=o.trim().replace(/\s+/g,' '),r=o,t=L==='ar'?null:tr(k,L);
 if(t)r=o.replace(o.trim(),t);n.nodeValue=r});
 var d=document.documentElement;d.lang=L;d.dir=L==='ar'?'rtl':'ltr';
 document.title=L==='ar'?T0:TT[L];
-updateMenuLabel();
+updateLocalizedAttributes(L);
+window.refreshGalleryLanguage();
 }
 var lb=document.getElementById('lb'),lm=document.getElementById('lm'),
 menuButton=document.getElementById('menu-toggle'),siteNav=document.getElementById('site-nav');
+var UI_LABELS={
+ar:{menuOpen:'فتح القائمة',menuClose:'إغلاق القائمة',language:'اللغة',closePhotos:'إغلاق الصور',previousPhoto:'الصورة السابقة',nextPhoto:'الصورة التالية',uk:'المملكة المتحدة',saudiArabia:'المملكة العربية السعودية',france:'فرنسا'},
+en:{menuOpen:'Open menu',menuClose:'Close menu',language:'Language',closePhotos:'Close photos',previousPhoto:'Previous photo',nextPhoto:'Next photo',uk:'United Kingdom',saudiArabia:'Saudi Arabia',france:'France'},
+fr:{menuOpen:'Ouvrir le menu',menuClose:'Fermer le menu',language:'Langue',closePhotos:'Fermer les photos',previousPhoto:'Photo précédente',nextPhoto:'Photo suivante',uk:'Royaume-Uni',saudiArabia:'Arabie saoudite',france:'France'},
+de:{menuOpen:'Menü öffnen',menuClose:'Menü schließen',language:'Sprache',closePhotos:'Fotos schließen',previousPhoto:'Vorheriges Foto',nextPhoto:'Nächstes Foto',uk:'Vereinigtes Königreich',saudiArabia:'Saudi-Arabien',france:'Frankreich'},
+es:{menuOpen:'Abrir menú',menuClose:'Cerrar menú',language:'Idioma',closePhotos:'Cerrar fotos',previousPhoto:'Foto anterior',nextPhoto:'Foto siguiente',uk:'Reino Unido',saudiArabia:'Arabia Saudí',france:'Francia'},
+ru:{menuOpen:'Открыть меню',menuClose:'Закрыть меню',language:'Язык',closePhotos:'Закрыть фотографии',previousPhoto:'Предыдущее фото',nextPhoto:'Следующее фото',uk:'Великобритания',saudiArabia:'Саудовская Аравия',france:'Франция'},
+it:{menuOpen:'Apri il menu',menuClose:'Chiudi il menu',language:'Lingua',closePhotos:'Chiudi le foto',previousPhoto:'Foto precedente',nextPhoto:'Foto successiva',uk:'Regno Unito',saudiArabia:'Arabia Saudita',france:'Francia'},
+zh:{menuOpen:'打开菜单',menuClose:'关闭菜单',language:'语言',closePhotos:'关闭图片',previousPhoto:'上一张图片',nextPhoto:'下一张图片',uk:'英国',saudiArabia:'沙特阿拉伯',france:'法国'}
+};
 function setUI(L){document.getElementById('lc').textContent=L.toUpperCase();lm.querySelectorAll('button').forEach(function(b){b.setAttribute('aria-current',b.dataset.l===L?'true':'false')})}
 function closeM(){lm.hidden=true;lb.setAttribute('aria-expanded','false')}
 function closeNav(){menuButton.closest('header.top').classList.remove('menu-open');menuButton.setAttribute('aria-expanded','false');updateMenuLabel()}
-function updateMenuLabel(){var open=menuButton.getAttribute('aria-expanded')==='true',lang=document.documentElement.lang;menuButton.setAttribute('aria-label',lang==='ar'?(open?'إغلاق القائمة':'فتح القائمة'):(open?'Close menu':'Open menu'))}
+function updateMenuLabel(){var open=menuButton.getAttribute('aria-expanded')==='true',labels=UI_LABELS[document.documentElement.lang]||UI_LABELS.en;menuButton.setAttribute('aria-label',open?labels.menuClose:labels.menuOpen)}
+function updateLocalizedAttributes(L){var labels=UI_LABELS[L]||UI_LABELS.en;document.getElementById('lb').setAttribute('aria-label',labels.language);document.getElementById('gallery-close').setAttribute('aria-label',labels.closePhotos);document.querySelector('.fl-gb').setAttribute('aria-label',labels.uk);document.querySelector('.fl-sa').setAttribute('aria-label',labels.saudiArabia);document.querySelector('.fl-fr').setAttribute('aria-label',labels.france);updateMenuLabel()}
 menuButton.addEventListener('click',function(e){e.stopPropagation();var open=menuButton.getAttribute('aria-expanded')!=='true';menuButton.closest('header.top').classList.toggle('menu-open',open);menuButton.setAttribute('aria-expanded',String(open));updateMenuLabel()});
 siteNav.addEventListener('click',function(e){if(e.target.closest('a'))closeNav()});
 lb.addEventListener('click',function(e){e.stopPropagation();var o=lm.hidden;lm.hidden=!o;lb.setAttribute('aria-expanded',String(o))});
@@ -328,5 +344,5 @@ box.after(dots);
 function show(k){i=k;rs.forEach(function(r,j){r.classList.toggle('on',j===k)});dots.childNodes.forEach(function(b,j){b.setAttribute('aria-current',j===k?'true':'false')})}
 function auto(){clearInterval(tm);if(!matchMedia('(prefers-reduced-motion:reduce)').matches)tm=setInterval(function(){show((i+1)%rs.length)},6500)}
 show(0);auto()})();
-function go(c){var t=c.querySelector('h3').textContent.trim(),e=document.documentElement.lang!=='ar';window.open('https://wa.me/201043608451?text='+encodeURIComponent((e?'Hello, I would like to book: ':'مرحبًا، أريد حجز: ')+t),'_blank','noopener')}
+function go(c){var t=c.querySelector('h3').textContent.trim(),lang=document.documentElement.lang;window.open('https://wa.me/201043608451?text='+encodeURIComponent((BOOKING_INTRO[lang]||BOOKING_INTRO.en)+' '+t),'_blank','noopener')}
 document.querySelectorAll('.tour').forEach(function(c){c.tabIndex=0;c.setAttribute('role','link');c.addEventListener('click',function(e){if(!e.target.closest('details,button,a'))go(c)});c.addEventListener('keydown',function(e){if(e.target===c&&(e.key==='Enter'||e.key===' ')){e.preventDefault();go(c)}})});
